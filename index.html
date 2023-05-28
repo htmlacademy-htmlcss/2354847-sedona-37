@@ -103,13 +103,36 @@
 <section class="subscription">
   <h2>Подпишитесь на рассылку</h2>
   <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-  <p class="subscription-form-mail">
-    <input type="text" id="subscription-mail" name="Ваш e-mail">
-    </p>
+
+  <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+    <input class="field" placeholder="Ваш e-mail" type="email" id="subscription-mail" name="subscription-email" required>
+    <buttom class="buttom subscription-buttom" type="submit">
+      <span class="visually-hidden">Подписаться</span>
+    </buttom>
+  </form>
 </section>
     </main>
 <footer>
-<a class="contact-phone" href="tel:+7(812)8121212">+7 (812) 812-12-12</a>
+  <section class="footer-social">
+    <ul class="social-item">
+      <li class="social-list-item">
+        <a href="https://vk.com/htmlacademy"><img src="#"  alt="VK"></a>
+      </li>
+      <li class="social-list-item">
+        <a href="https://t.me/htmlacademy "><img src="#" alt="Telegram"></a>
+      </li>
+      <li class="social-list-item">
+        <a href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="Youtube"></a>
+        </li>
+    </ul>
+  </section>
+  <section class="footer-contacts">
+<a class="contact-phone" href="tel:+7(812)8121212">+7 (812) 812-12-12</a></section>
+<section class="">
+  <a class="logo" href="https://htmlacademy.ru/">
+    <img src="#" alt="Сделано в htmlacademy">
+  </a>
+</section>
 </footer>
   </body>
 </html>
