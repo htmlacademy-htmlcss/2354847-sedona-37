@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.navigation {
+    text-align: center;
+}
+
+.navigation-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.navigation-list {
+    list-style: none;
+}
+
+.main-index {
+    text-align: center;
+}
+
+.main-catalog {
+    text-align: left;
+}
+
+.hero {
+    color: #000000;
+    background-color: #82B3D3;
+    background-image: url("../image/index/jpeg/hero-main-foto.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.link-button {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /* настроить цвет кнопки */
+    background-color: #756157;
+    text-decoration: none;
+}
+
+.small-link-button {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.big-link-button {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.button {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /* настроить цвет кнопки */
+    background-color: #82B3D3;
+}
+
+.small-button {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.big-button {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+p .advantages-title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.advantages-list {
+    list-style: none;
+}
+
+.advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.subscription {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    background-image: url("../image/index/jpeg/subscribe-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-top: 96px;
+    padding-bottom: 104px;
+}
+
+.contact-phone {
+    font-size: 40px;
+    line-height: 40px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-list {
+    list-style: none;
+}
+
+.catalog-hotels {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    background-image: url("../image/catalog/jpeg/catalog-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.inner-header {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+}
+
+.breadcrumbs-list {
+    list-style: none;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.catalog-filter-list {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.view-button {}
+
+.hotel-card-list {
+    list-style: none;
+}
+
+.hotel-card-link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+
+.pagination-link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    background: #F2F2F2;
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
