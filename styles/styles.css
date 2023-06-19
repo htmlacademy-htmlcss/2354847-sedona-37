@@ -14,7 +14,15 @@
     display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -23,7 +31,12 @@ body {
 }
 
 .navigation {
+    display: flex;
     text-align: center;
+    width: 1060px;
+    margin: 0 auto;
+    justify-content: space-between;
+
 }
 
 .navigation-link {
@@ -36,14 +49,35 @@ body {
 
 .navigation-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 610px;
+
+}
+
+.navigation-user {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    margin-left: auto;
 }
 
 .main-index {
     text-align: center;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
 .main-catalog {
     text-align: left;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .hero {
@@ -52,6 +86,11 @@ body {
     background-image: url("../image/index/jpeg/hero-main-foto.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
+
+.main-title {
+    display: block;
+    margin: 0 auto;
 }
 
 .link-button {
@@ -92,10 +131,18 @@ body {
 }
 
 .title {
+    width: 620px;
+    text-align: center;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+}
+
+.discriptions {
+    font-size: 22px;
+    line-height: 26px;
+    width: 651px;
 }
 
 p .advantages-title {
@@ -104,8 +151,21 @@ p .advantages-title {
     line-height: 26px;
 }
 
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
 .advantages-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .advantages-title {
@@ -114,8 +174,26 @@ p .advantages-title {
     text-transform: uppercase;
 }
 
+.advantages-item {
+    width: 400px;
+    flex-grow: 1;
+}
+
+.advantages-item-picture {
+    width: 800px;
+}
+
 .services-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-item {
+    width: 400px;
+
 }
 
 .subscription {
@@ -168,6 +246,16 @@ p .advantages-title {
 
 .hotel-card-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hotel-card-item {
+    width: 340px;
+    padding: 20px;
 }
 
 .hotel-card-link {
@@ -203,4 +291,62 @@ p .advantages-title {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.star-1 {
+    height: 17px;
+    background-color: #FFFFFF;
+    background-image: url("../image/catalog/svg/icon-star.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.star-2 {
+    height: 17px;
+    background-color: #FFFFFF;
+    background-image: url("../image/catalog/svg/icon-star.svg"), url("../image/catalog/svg/icon-star.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0, 21px 0;
+}
+
+.star-3 {
+    height: 17px;
+    background-color: #FFFFFF;
+    background-image: url("../image/catalog/svg/icon-star.svg"), url("../image/catalog/svg/icon-star.svg"), url("../image/catalog/svg/icon-star.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0, 21px 0, 42px 0;
+}
+
+.star-4 {
+    height: 17px;
+    background-color: #FFFFFF;
+    background-image: url("../image/catalog/svg/icon-star.svg"), url("../image/catalog/svg/icon-star.svg"), url("../image/catalog/svg/icon-star.svg"), url("../image/catalog/svg/icon-star.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0, 21px 0, 42px 0, 63px 0;
+}
+
+.star-5 {
+    height: 17px;
+    background-color: #FFFFFF;
+    background-image: url("../image/catalog/svg/icon-star.svg"), url("../image/catalog/svg/icon-star.svg"), url("../image/catalog/svg/icon-star.svg"), url("../image/catalog/svg/icon-star.svg"), url("../image/catalog/svg/icon-star.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0, 21px 0, 42px 0, 63px 0, 84px 0;
+}
+
+.footer-container {
+    width: 1060px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-social {
+    width: 142px;
+    height: 40px;
+}
+
+.footer-made-by {
+    width: 115px;
 }
