@@ -23,6 +23,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
@@ -69,8 +72,10 @@ body {
 }
 
 .main-container {
+    width: 1200px;
     flex-grow: 1;
     height: 100%;
+    */
 }
 
 .main-catalog {
@@ -173,7 +178,8 @@ body {
 
 .advantages-item {
     width: 400px;
-    flex-grow: 1;
+
+
 }
 
 .advantages-item-picture {
@@ -189,9 +195,30 @@ body {
 }
 
 .services-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 400px;
+    background-color: rgba(131, 179, 211, 0.12);
+    padding: 85px 81px;
 
 }
+
+.services-item:nth-child(2) {
+    background-color: #FFFFFF;
+}
+
+.services-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.services-image {
+    order: -1;
+}
+
 
 .subscription {
     color: #FFFFFF;
@@ -239,10 +266,10 @@ body {
     line-height: 23px;
 }
 
-.view-button {}
 
 .hotel-card-list {
     list-style: none;
+    width: 1060px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -251,8 +278,15 @@ body {
 }
 
 .hotel-card-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 340px;
-    padding: 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+
 }
 
 .hotel-card-link {
@@ -288,6 +322,22 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+/* .small-link-button { */
+width: 140px;
+height: 36px;
+background: #756157;
+border-radius: 4px;
+padding: 8px;
+}
+
+/* .small-button { */
+width: 140px;
+height: 36px;
+background: #82B3D3;
+border-radius: 4px;
+padding: 8px;
 }
 
 .star-1 {
@@ -346,4 +396,45 @@ body {
 
 .footer-made-by {
     width: 115px;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    padding: 8px;
+    background: #756157;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button-additional {
+    background: #82B3D3;
+}
+
+.button-rating {
+    background: #F2F2F2;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+.small-button {
+    width: 140px;
+    height: 34px;
 }
