@@ -22,6 +22,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
@@ -69,6 +70,7 @@ body {
 
 .main-container {
     flex-grow: 1;
+    height: 100%;
 }
 
 .main-catalog {
@@ -130,27 +132,6 @@ body {
     line-height: 36px;
 }
 
-.title {
-    width: 620px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-}
-
-.discriptions {
-    font-size: 22px;
-    line-height: 26px;
-    width: 651px;
-}
-
-p .advantages-title {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-}
-
 .title-container {
     display: flex;
     flex-direction: column;
@@ -159,7 +140,23 @@ p .advantages-title {
     padding: 0;
 }
 
+.title {
+    width: 620px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.descriptions {
+    font-size: 22px;
+    line-height: 26px;
+    /* width: 651px; */
+}
+
+
 .advantages-list {
+    width: 1200px;
     margin: 0;
     padding: 0;
     list-style: none;
