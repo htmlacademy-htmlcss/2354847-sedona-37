@@ -119,12 +119,12 @@ body {
     line-height: 36px;
 }
 
-.button {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    /* настроить цвет кнопки */
-    background-color: #82B3D3;
+/* .button { */
+font-weight: 700;
+text-transform: uppercase;
+color: #FFFFFF;
+/* настроить цвет кнопки */
+background-color: #82B3D3;
 }
 
 .small-button {
