@@ -38,6 +38,7 @@ body {
     margin: 0 auto;
     padding: 0 70px;
     box-sizing: border-box;
+    margin-bottom: -6px;
 
 }
 
@@ -121,6 +122,7 @@ body {
     margin: 0 auto;
     padding: 0 70px;
     box-sizing: border-box;
+
 }
 
 .hero {
@@ -133,6 +135,7 @@ body {
     padding-top: 51px;
     min-height: 485px;
     box-sizing: border-box;
+
 }
 
 .main-title {
@@ -688,7 +691,6 @@ padding: 8px;
 }
 
 .social-list {
-    min-width: 132px;
     height: 40px;
     margin: 0;
     padding: 0;
@@ -704,15 +706,21 @@ padding: 8px;
     display: block;
     margin: 0;
     padding: 0;
+
 }
+
+
 
 .social-list-item {
     display: block;
     margin: 0;
     padding: 0;
-
+    margin-right: 26px;
 }
 
+.social-list-item:last-child {
+    margin-right: 0;
+}
 
 .footer-contacts {
     width: 340px;
