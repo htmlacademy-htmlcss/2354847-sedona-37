@@ -302,14 +302,18 @@ body {
   height: 2px;
   border: none;
   background: rgba(0, 0, 0, 0.3);
+
+}
+
+.advantages-line-edge {
+  width: 60px;
+  height: 2px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
   margin: 0 auto;
 }
 
-.advantages-item-edge .advantages-line {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.advantages-line:first-child {
+/* .advantages-line:first-child {
   width: 60px;
   height: 2px;
   border: none;
@@ -323,7 +327,7 @@ body {
   border: none;
   background: rgba(255, 255, 255, 0.3);
   margin: 0 auto;
-}
+} */
 
 
 .advantages-item-picture {
@@ -704,23 +708,22 @@ body {
   justify-content: flex-start;
 }
 
-.pagination-item {
+/* Item */
+
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link {
   display: block;
+  box-sizing: border-box;
   width: 60px;
   height: 60px;
   background: #82B3D3;
   border-radius: 4px;
-  margin-right: 8px;
   text-align: center;
-  line-height: 60px;
-
-}
-
-.pagination-item:last-child {
-  margin-right: 0;
-}
-
-.pagination-link {
+  padding: 12px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -728,22 +731,38 @@ body {
   text-decoration: none;
 }
 
-.pagination-item-current {
-  background: #F2F2F2;
-}
 
 .pagination-link-current {
-  color: black;
+  background: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-current {
+  color: #242424;
+  background-color: #ffffff;
 }
 
 .pagination-disabled {
-  background: #ffffff;
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 12px 0;
+  background: white;
+  color: #000000;
+
 }
 
-.pagination-item:not(.pagination-item-current):not(.pagination-disabled):hover {
+
+.pagination-link:not(.pagination-link-current):hover,
+.pagination-link:not(.pagination-link-current):not(.pagination-disabled):focus {
   background: #68A2CA;
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -862,6 +881,18 @@ body {
   margin-right: 0;
 }
 
+.social-list-item a:hover svg {
+  fill: #68A2CA;
+}
+
+.social-list-item a:focus svg {
+  fill: #68A2CA;
+}
+
+.social-list-item a:active svg {
+  fill: rgba(104, 162, 202, 0.30);
+}
+
 .footer-contacts {
   width: 340px;
   height: 40px;
@@ -899,6 +930,23 @@ body {
   position: relative;
 }
 
+.logo svg {
+  fill: #000000;
+}
+
+.logo:hover svg {
+  fill: #756157
+}
+
+
+.logo:focus svg {
+  fill: #756157
+}
+
+.logo:active svg {
+  fill: rgba(117, 97, 87, 0.30);
+}
+
 .made-by-icon {
   position: absolute;
   top: 3px;
@@ -906,7 +954,6 @@ body {
   bottom: 0;
   left: 0;
   margin: 0 auto;
-  fill: #000000;
 }
 
 
