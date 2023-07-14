@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 Chrome version,last 4 Firefox version,last 4 Safari version
+*/
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -93,7 +100,7 @@ body {
   margin: 0;
   padding: 0;
   width: 510px;
-  height: 24px;
+  min-height: 24px;
   padding: 20px 0;
   display: flex;
   flex-direction: row;
@@ -212,12 +219,6 @@ body {
   margin-bottom: 82px;
 }
 
-
-
-/* .big-button {
-  font-size: 20px;
-  /* line-height: 36px; */
-}
 
 .title-container {
   display: flex;
@@ -803,6 +804,7 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -855,7 +857,6 @@ body {
   font: inherit;
   letter-spacing: inherit;
   word-spacing: inherit;
-  -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   /* рамка и отступы */
