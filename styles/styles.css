@@ -91,14 +91,13 @@ body {
   text-align: center;
   padding-top: 5px;
   margin: 0;
-  top: -9px;
-  left: 8px;
+  top: -32px;
+  left: 20px;
 }
 
 .navigation-list {
   list-style: none;
   margin: 0;
-  padding: 0;
   width: 510px;
   min-height: 24px;
   padding: 20px 0;
@@ -112,13 +111,11 @@ body {
 .navigation-list .navigation-link-current {
   text-decoration: none;
   border-bottom: 2px solid #756257;
-  padding-bottom: 17px;
 }
 
 .navigation-list .navigation-link:hover {
   text-decoration: none;
   border-bottom: 2px solid #756257;
-  padding-bottom: 17px;
 }
 
 
@@ -137,16 +134,27 @@ body {
 }
 
 .navigation-icon-item {
-  position: relative
+  position: relative;
+
 }
 
+.navigation-user .navigation-item {
+  min-width: 20px;
+  margin: 0;
+}
 
+/* .navigation-user:last-child {
+  min-width: 160px;
+  box-sizing: border-box;
+  padding: 0;
+} */
 
 .navigation-item {
   display: block;
   padding: 0;
   margin: 0;
   margin-right: 32px;
+  box-sizing: border-box;
 }
 
 .navigation-icon {
@@ -156,14 +164,21 @@ body {
   left: 0;
   margin: auto;
   fill: black;
+  padding: 22px 12px;
 }
 
-.navigation-item:last-child {
-  margin: 0;
+.navigation-item-button {
+  display: block;
+
+  padding: 0;
+  padding-left: 20px;
+  min-width: 180px;
+
 }
 
 .header-button {
   min-width: 160px;
+  margin: 0 auto;
 }
 
 .main-index {
