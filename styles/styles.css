@@ -1437,6 +1437,7 @@ input::-webkit-inner-spin-button {
 
 .index-field-date-icon {
   position: absolute;
+  margin: 0;
   padding: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -1450,22 +1451,18 @@ input::-webkit-inner-spin-button {
 }
 
 .form-label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-  margin-bottom: 4px;
-}
-
-.form-label span {
-  width: 137px;
+  display: grid;
+  grid-template-columns: 137px auto;
   font-size: 20px;
   font-family: PT Sans;
   font-weight: 700;
   text-transform: capitalize;
   line-height: 24px;
-  padding: 12px 0;
+  align-items: center;
+  position: relative;
+  margin-bottom: 4px;
 }
+
 
 .additional-span {
   display: block;
