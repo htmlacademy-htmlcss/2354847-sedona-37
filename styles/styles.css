@@ -85,6 +85,11 @@ body {
   position: relative;
 }
 
+.navigation-link-icon:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
 .favorite-counter {
   box-sizing: border-box;
   height: 20px;
